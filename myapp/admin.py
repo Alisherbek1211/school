@@ -16,7 +16,7 @@ admin.site.register(About,AboutAdmin)
 
 
 class TeacherAdmin(admin.ModelAdmin):
-    list_display = ['first_name','last_name','subject','title','email','phone','telegram_link','instagram_link','facebook_link','created_at','updated_at']
+    list_display = ['first_name','last_name','subject','description','email','phone','telegram_link','instagram_link','facebook_link','created_at','updated_at']
     list_editable = ['subject']
     list_per_page = 10
     search_fields = ['first_name','last_name']
