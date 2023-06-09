@@ -18,3 +18,9 @@ class NewSerializer(ModelSerializer):
     class Meta:
         model = News
         fields = '__all__'
+
+
+class GallarySerializer(ModelSerializer):
+    class Meta:
+        model = Gallary
+        fields = '__all__'

@@ -5,6 +5,7 @@ router = DefaultRouter()
 router.register('about',AboutViewSet)
 router.register('teacher',TeacherViewSet)
 router.register('news',NewViewSet)
+router.register('gallary',GallaryViewSet)
 
 urlpatterns = [
     path('',include(router.urls))

@@ -17,3 +17,8 @@ class TeacherViewSet(ModelViewSet):
 class NewViewSet(ModelViewSet):
     queryset = News.objects.all()
     serializer_class = NewSerializer
+
+
+class GallaryViewSet(ModelViewSet):
+    queryset = Gallary.objects.all()
+    serializer_class = GallarySerializer
