@@ -6,7 +6,7 @@ class Teachers(models.Model):
     first_name = models.CharField(max_length=255)
     last_name = models.CharField(max_length=255)
     subject = models.CharField(max_length=255,null=True,blank=True)
-    title = models.CharField(max_length=255,null=True,blank=True)
+    description = models.TextField(null=True,blank=True)
     image = models.ImageField(upload_to='teacher-image',null=True,blank=True)
     email = models.EmailField(null=True,blank=True)
     phone = models.CharField(max_length=255,null=True,blank=True)
